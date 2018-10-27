@@ -72,9 +72,9 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.smtp_settings = {
-    :address => "smtp.gmail.com",
+    :address => "smtp.sendgrid.net",
     :port => 587,
-    :domain => "gmai.com",
+    :domain => "sendgrid.com",
     :authentication => :plain,
     :user_name => Rails.application.secrets.sendgrid_username,
     :password => Rails.application.secrets.sendgrid_password
